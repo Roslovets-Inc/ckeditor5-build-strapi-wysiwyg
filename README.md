@@ -1,4 +1,4 @@
-CKEditor 5 enhanced editor for Strapi
+# Enhanced build of CKEditor 5 for Strapi
 
 Enhanced CKEditor 5 build for Strapi WYSIWYG editor replacement.
 

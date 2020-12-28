@@ -68,7 +68,7 @@
   },
   "author": "Pavel Roslovets (https://github.com/roslovets)",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
+  "homepage": "https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg",
   "bugs": "https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg/issues",
   "repository": {
     "type": "git",
