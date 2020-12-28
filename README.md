@@ -17,8 +17,3 @@ Enhanced CKEditor 5 build for Strapi WYSIWYG editor replacement.
 It's recommended to install to your Strapi [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) that based on this plugin.
 
 If you want to integrate plugin manually examine [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) for example.
-
-
-## Acknowledgement
-
-This plugin uses code from [official manual](https://strapi.io/documentation/developer-docs/latest/guides/registering-a-field-in-admin.html).
