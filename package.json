@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-strapi-wysiwyg",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "CKEditor 5 build for Strapi WYSIWYG editor replacement",
   "private": false,
   "keywords": [
