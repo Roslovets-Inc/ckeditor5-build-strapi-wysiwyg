@@ -52,6 +52,7 @@
     "@ckeditor/ckeditor5-table": "^24.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^24.0.0",
     "@ckeditor/ckeditor5-typing": "^24.0.0",
+    "@gtomato/ckeditor5-strapi-upload-plugin": "^1.0.0",
     "eslint": "^7.1.0",
     "eslint-config-ckeditor5": "^3.0.0",
     "postcss-loader": "^3.0.0",

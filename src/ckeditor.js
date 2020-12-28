@@ -13,6 +13,7 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
+import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
@@ -33,6 +34,7 @@ import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import AutoLink from '@ckeditor/ckeditor5-link/src/autolink';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters';
 import SpecialCharactersEssentials from '@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials';
+import { StrapiUploadAdapter } from '@gtomato/ckeditor5-strapi-upload-plugin';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -45,6 +47,7 @@ ClassicEditor.builtinPlugins = [
 	BlockQuote,
 	Heading,
 	Image,
+	ImageInsert,
 	ImageCaption,
 	ImageStyle,
 	ImageToolbar,
@@ -64,7 +67,8 @@ ClassicEditor.builtinPlugins = [
 	Alignment,
 	AutoLink,
 	SpecialCharacters,
-	SpecialCharactersEssentials
+	SpecialCharactersEssentials,
+	StrapiUploadAdapter
 ];
 
 // Editor configuration.
@@ -78,6 +82,7 @@ ClassicEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
+			'imageInsert',
 			'|',
 			'alignment',
 			'indent',
