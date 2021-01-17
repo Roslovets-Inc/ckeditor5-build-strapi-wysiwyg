@@ -35,4 +35,9 @@ npm run build
 
 It's recommended to install to your Strapi [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) plugin that based on this build.
 
-If you want to integrate build manually examine [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) source code as integration example.
+If you want to integrate the build manually examine [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) source code as integration example.
+
+
+## How to add more features to the editor
+
+If you want to see more features in this build feel free to request it in [issues](https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg/issues) or create pull request.
