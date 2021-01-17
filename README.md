@@ -12,8 +12,27 @@ Enhanced CKEditor 5 build for Strapi WYSIWYG editor replacement.
 - Works with Strapi 3.4.0+
 
 
+## How to try
+
+1. Clone repository and change directory
+
+```
+git clone https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg
+cd ckeditor5-build-strapi-wysiwyg
+```
+
+2. Install dependencies and build CKEditor
+
+```
+npm i
+npm run build
+```
+
+3. Open **sample/index.html** in your system browser.
+
+
 ## How to use
 
-It's recommended to install to your Strapi [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) that based on this plugin.
+It's recommended to install to your Strapi [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) plugin that based on this build.
 
-If you want to integrate plugin manually examine [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) for example.
+If you want to integrate build manually examine [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) source code as integration example.
