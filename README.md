@@ -40,7 +40,7 @@ If you want to integrate the build manually examine [strapi-plugin-ckeditor5](ht
 
 ## How to add more features to the editor
 
-If you want to see more features in this build feel free to request it in [issues](https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg/issues) or create pull request.
+If you want to see more features in this build feel free to request it in [issues](https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg/issues) or create pull request. Together we will build a comprehensive editor for common needs.
 
 
 ## Links
