@@ -1,6 +1,6 @@
 # Enhanced build of CKEditor 5 for Strapi
 
-Enhanced CKEditor 5 build to replace Strapi WYSIWYG editor.
+Enhanced CKEditor 5 build to replace default Strapi WYSIWYG editor.
 
 ![ckeditor5-build-strapi-wysiwyg](/sample/ckeditor5-build-strapi-wysiwyg.png)
 
