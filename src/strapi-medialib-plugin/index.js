@@ -1,7 +1,7 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
-
 import imageIcon from './assets/strapi-medialib.svg';
+
 
 export class StrapiMediaLib extends Plugin {
 
@@ -14,6 +14,7 @@ export class StrapiMediaLib extends Plugin {
         const config = editor.config.get('strapiMediaLib');
 
         editor.ui.componentFactory.add('strapiMediaLib', locale => {
+            
             const view = new ButtonView(locale);
 
             view.set({
