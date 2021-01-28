@@ -101,17 +101,10 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative',
-			'|',
-			'imageResize:50',
-			'imageResize:75',
-			'imageResize:original',
-			'|',
-			'linkImage'
+		styles: [
+			'alignLeft',
+			'alignCenter',
+			'alignRight'
 		],
 		resizeOptions: [
 			{
@@ -129,6 +122,19 @@ ClassicEditor.defaultConfig = {
 				value: '75',
 				icon: 'large'
 			}
+		],
+		toolbar: [
+			'imageStyle:alignLeft',
+			'imageStyle:alignCenter',
+			'imageStyle:alignRight',
+			'|',
+			'imageTextAlternative',
+			'|',
+			'imageResize:50',
+			'imageResize:75',
+			'imageResize:original',
+			'|',
+			'linkImage'
 		]
 	},
 	table: {
