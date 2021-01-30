@@ -15,6 +15,11 @@ Enhanced build of [CKEditor 5](https://github.com/ckeditor/ckeditor5) to replace
 
 ## How to try
 
+Check out [👀 **live demo**](https://roslovets-inc.github.io/ckeditor5-build-strapi-wysiwyg/sample.html) where you can test most of the features.
+
+
+## How to try manually
+
 1. Clone repository and change directory
 
 ```
@@ -29,7 +34,7 @@ npm i
 npm run build
 ```
 
-3. Open **sample/index.html** in your system browser.
+3. Open **sample.html** in your system browser.
 
 
 ## How to use
