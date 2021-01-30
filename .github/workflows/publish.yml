@@ -21,4 +21,4 @@ jobs:
           BRANCH: gh-pages
           FOLDER: build
           CLEAN: true
-          TARGET_FOLDER: build
+          TARGET_FOLDER: build1
