@@ -14,12 +14,15 @@ jobs:
           npm ci
           npm run build
 
-      - name: Delete extra files
+      - name: Delete extra files ❌
         run: |
           rm -rf node_modules src .github
           rm .gitignore package.json package-lock.json webpack.config.js
 
-      - name: Publish sample
+      - name: Prepare sample ⚒
+        run: mv sample.html index.html
+
+      - name: Publish sample 📢
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
