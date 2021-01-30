@@ -4,7 +4,7 @@ Enhanced build of [CKEditor 5](https://github.com/ckeditor/ckeditor5) to replace
 
 ![ckeditor5-build-strapi-wysiwyg sample](/sample.png)
 
-[👀 **live demo**](https://roslovets-inc.github.io/ckeditor5-build-strapi-wysiwyg/sample.html)
+[👀 **Live Demo**](https://roslovets-inc.github.io/ckeditor5-build-strapi-wysiwyg/sample.html)
 
 
 ## Features
