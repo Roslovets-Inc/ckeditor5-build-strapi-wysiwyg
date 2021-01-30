@@ -1,13 +1,14 @@
 # Enhanced build of CKEditor 5 for Strapi
 
-Enhanced build of CKEditor 5 to replace default Strapi WYSIWYG editor.
+Enhanced build of [CKEditor 5](https://github.com/ckeditor/ckeditor5) to replace default [Strapi](https://github.com/strapi/strapi) WYSIWYG editor.
 
 ![ckeditor5-build-strapi-wysiwyg](/sample/ckeditor5-build-strapi-wysiwyg.png)
 
 
 ## Features
 
-- Enhanced build of [CKEditor 5](https://github.com/ckeditor/ckeditor5) with more capabilities then Classic Editor build has
+- Enhanced build of CKEditor 5 with more capabilities then Classic Editor build has
+- Extensive set of features for your rich content
 - Automatically upload Inserted images to Strapi Media Library (thanks to [ckeditor5-strapi-upload-plugin](https://github.com/gtomato/ckeditor5-strapi-upload-plugin))
 - Access Strapi Media Library directly from the editor toolbar 🔥
 
