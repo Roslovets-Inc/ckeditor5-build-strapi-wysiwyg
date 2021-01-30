@@ -14,8 +14,10 @@ jobs:
           npm ci
           npm run build
 
-      - name: Rewrite .gitignore
-        run: echo "node_modiles" > .gitignore
+      - name: Delete extra files
+        run: |
+          rm -rf node_modules
+          rm .gitignore
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
