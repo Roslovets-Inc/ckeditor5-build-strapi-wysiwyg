@@ -14,10 +14,13 @@ jobs:
           npm ci
           npm run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - name: Delete extra files
+        run: |
+          rm -rf node_modules src .github
+          rm .gitignore package.json package-lock.json webpack.config.js
+
+      - name: Publish
+        uses: actions-js/push@master
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: .
-          CLEAN: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
