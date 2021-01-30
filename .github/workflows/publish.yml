@@ -1,4 +1,4 @@
-name: Build and Publish
+name: Build and publish sample
 on: [push]
 jobs:
   build-and-deploy:
@@ -9,7 +9,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install and Build 🔧
+      - name: Install and build 🔧
         run: |
           npm ci
           npm run build
@@ -19,8 +19,9 @@ jobs:
           rm -rf node_modules src .github
           rm .gitignore package.json package-lock.json webpack.config.js
 
-      - name: Publish
+      - name: Publish sample
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
+          force: true
