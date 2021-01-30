@@ -14,10 +14,13 @@ jobs:
           npm ci
           npm run build
 
+      - name: Rewrite .gitignore
+        run: echo "node_modiles" > .gitignore
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: . # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+          BRANCH: gh-pages
+          FOLDER: .
+          CLEAN: true
