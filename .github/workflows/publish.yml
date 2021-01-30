@@ -19,9 +19,6 @@ jobs:
           rm -rf node_modules src .github
           rm .gitignore package.json package-lock.json webpack.config.js
 
-      - name: Prepare sample ⚒
-        run: mv sample.html index.html
-
       - name: Publish sample 📢
         uses: actions-js/push@master
         with:
