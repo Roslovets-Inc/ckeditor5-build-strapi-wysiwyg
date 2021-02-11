@@ -30,9 +30,10 @@ import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import AutoLink from '@ckeditor/ckeditor5-link/src/autolink';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters';
 import SpecialCharactersEssentials from '@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 import { StrapiUploadAdapter } from '@gtomato/ckeditor5-strapi-upload-plugin';
 import { StrapiMediaLib } from './strapi-medialib-plugin';
-
+import sanitizeHtml from 'sanitize-html';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -68,6 +69,7 @@ ClassicEditor.builtinPlugins = [
 	AutoLink,
 	SpecialCharacters,
 	SpecialCharactersEssentials,
+	HtmlEmbed,
 	StrapiUploadAdapter,
 	StrapiMediaLib
 ];
@@ -95,7 +97,9 @@ ClassicEditor.defaultConfig = {
 			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
+			'htmlEmbed',
 			'horizontalLine',
+			'|',
 			'undo',
 			'redo'
 		]
@@ -152,6 +156,16 @@ ClassicEditor.defaultConfig = {
 			{ model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' },
 			{ model: 'heading4', view: 'h4', title: 'Heading 4', class: 'ck-heading_heading4' }
 		]
+	},
+	htmlEmbed: {
+		showPreviews: true
+	},
+	sanitizeHtml: (inputHtml) => {
+		const outputHtml = sanitizeHtml(inputHtml);
+		return {
+			html: outputHtml,
+			hasChanged: true
+		};
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'

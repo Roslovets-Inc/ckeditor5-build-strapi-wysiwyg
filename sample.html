@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Enhanced build of CKEditor 5 for Strapi – Live Demo</title>
@@ -11,35 +12,44 @@
 		}
 	</style>
 </head>
+
 <body>
 
-<h1>Enhanced Build of CKEditor 5 for Strapi – Live Demo</h1>
+	<h1>Enhanced Build of CKEditor 5 for Strapi – Live Demo</h1>
 
-<h3>Please note: Insert Image and Media Library buttons work only in Strapi</h3>
+	<h3>Please note: Insert Image and Media Library buttons work only in Strapi</h3>
 
-<div id="editor">
-	<h2>Your Playground</h2>
+	<div id="editor">
+		<h2>Your Playground</h2>
 
-	<p>This is an instance of the <a href="https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg">enhanced CKEditor 5 build</a> for <a href="https://strapi.io/">Strapi</a>. Try to do your usual things.</p>
-	<p>Integrate this WYSIWYG-editor into your Strapi with <a href="https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5">strapi-plugin-ckeditor5</a>: <b>npm i strapi-plugin-ckeditor5</b></p>
+		<p>This is an instance of the <a href="https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg">enhanced
+				CKEditor 5 build</a> for <a href="https://strapi.io/">Strapi</a>. Try to do your usual things.</p>
+		<p>Integrate this WYSIWYG-editor into your Strapi with <a
+				href="https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5">strapi-plugin-ckeditor5</a>: <b>npm i
+				strapi-plugin-ckeditor5</b></p>
 
-	<figure class="image">
-		<img src="./tests/manual/sample.jpg" alt="Autumn fields" />
-		<figcaption>Sample image</figcaption>
-	</figure>
+		<figure class="image">
+			<img src="./tests/manual/sample.jpg" alt="Autumn fields" />
+			<figcaption>Sample image</figcaption>
+		</figure>
 
-</div>
+		<div class="raw-html-embed">
+			<b>Custom HTML content preview</b>
+		</div>
 
-<script src="./build/ckeditor.js"></script>
-<script>
-	ClassicEditor.create( document.querySelector( '#editor' ) )
-		.then( editor => {
-			window.editor = editor;
-		} )
-		.catch( error => {
-			console.error( 'There was a problem initializing the editor.', error );
-		} );
-</script>
+	</div>
+
+	<script src="./build/ckeditor.js"></script>
+	<script>
+		ClassicEditor.create(document.querySelector('#editor'))
+			.then(editor => {
+				window.editor = editor;
+			})
+			.catch(error => {
+				console.error('There was a problem initializing the editor.', error);
+			});
+	</script>
 
 </body>
+
 </html>
