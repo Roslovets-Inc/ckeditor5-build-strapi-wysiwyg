@@ -41,9 +41,9 @@ npm run build
 
 ## How to use
 
-It's recommended to install to your Strapi [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) plugin that based on this build.
+Just install to your Strapi [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) plugin based on this build (recommended).
 
-If you want to integrate the build manually examine [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) source code as integration example.
+If you want to integrate the build manually examine [strapi-plugin-ckeditor5](https://github.com/Roslovets-Inc/strapi-plugin-ckeditor5) source code as an integration example.
 
 
 ## How to add more features to the editor
