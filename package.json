@@ -81,7 +81,7 @@
     "lint": "eslint --quiet \"**/*.js\"",
     "bootstrap": "yarn install",
     "build": "webpack --mode production",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "preversion": "npm run build",
     "postversion": "git push && git push --tags"
   },
