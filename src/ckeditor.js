@@ -108,7 +108,8 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'undo',
 			'redo'
-		]
+		],
+		shouldNotGroupWhenFull: true
 	},
 	image: {
 		styles: [
