@@ -31,6 +31,7 @@ import AutoLink from '@ckeditor/ckeditor5-link/src/autolink';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters';
 import SpecialCharactersEssentials from '@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials';
 import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 import { StrapiUploadAdapter } from '@gtomato/ckeditor5-strapi-upload-plugin';
 import { StrapiMediaLib } from './strapi-medialib-plugin';
 import sanitizeHtml from 'sanitize-html';
@@ -71,7 +72,8 @@ ClassicEditor.builtinPlugins = [
 	SpecialCharactersEssentials,
 	HtmlEmbed,
 	StrapiUploadAdapter,
-	StrapiMediaLib
+	StrapiMediaLib,
+	Font
 ];
 
 // Editor configuration.
@@ -79,6 +81,10 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
+			'|',
+			'fontFamily',
+			'fontSize',
+			'fontColor',
 			'|',
 			'bold',
 			'italic',
