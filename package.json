@@ -26,7 +26,6 @@
   "files": [
     "build"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@ckeditor/ckeditor5-alignment": "^25.0.0",
     "@ckeditor/ckeditor5-autoformat": "^25.0.0",
