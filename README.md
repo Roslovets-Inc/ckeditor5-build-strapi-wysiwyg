@@ -29,11 +29,10 @@ git clone https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg
 cd ckeditor5-build-strapi-wysiwyg
 ```
 
-2. Install dependencies and build CKEditor
+2. Install dependencies and build CKEditor (automatically)
 
 ```
 npm i
-npm run build
 ```
 
 3. Open **sample.html** in your system browser.
