@@ -14,8 +14,7 @@ jobs:
 
       - name: Install and build 🔧
         run: |
-          npm ci
-          npm run build
+          npm i
 
       - name: Delete extra files ❌
         run: |
