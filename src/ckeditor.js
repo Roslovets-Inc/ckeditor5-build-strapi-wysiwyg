@@ -183,20 +183,6 @@ ClassicEditor.defaultConfig = {
   htmlEmbed: {
     showPreviews: true,
   },
-  codeBlock: {
-    languages: [
-      { language: "css", label: "CSS" },
-      { language: "html", label: "HTML" },
-      { language: "scss", label: "SCSS" },
-      { language: "javascript", label: "JavasSript" },
-      { language: "typescript", label: "TypeScript" },
-      { language: "typescript", label: "TypeScript" },
-      { language: "jsx", label: "JSX" },
-      { language: "tsx", label: "TSX" },
-      { language: "json", label: "JSON" },
-      { language: "plaintext", label: "Plain text" },
-    ],
-  },
   sanitizeHtml: (inputHtml) => {
     const outputHtml = sanitizeHtml(inputHtml);
     return {
