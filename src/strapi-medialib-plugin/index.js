@@ -25,7 +25,7 @@ export class StrapiMediaLib extends Plugin {
 
             view.on('execute', () => {
                 if (config && config.onToggle) {
-                    config.onToggle();
+                    config.onToggle(editor);
                 }
                 else {
                     alert('Properly integrate editor into Strapi to make button work');
