@@ -103,7 +103,7 @@ ClassicEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
-			'imageInsert',
+			'insertImage',
 			'strapiMediaLib',
 			'|',
 			'alignment',
@@ -132,17 +132,17 @@ ClassicEditor.defaultConfig = {
 		],
 		resizeOptions: [
 			{
-				name: 'imageResize:original',
+				name: 'resizeImage:original',
 				value: null,
 				icon: 'original'
 			},
 			{
-				name: 'imageResize:50',
+				name: 'resizeImage:50',
 				value: '50',
 				icon: 'medium'
 			},
 			{
-				name: 'imageResize:75',
+				name: 'resizeImage:75',
 				value: '75',
 				icon: 'large'
 			}
@@ -154,9 +154,9 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'imageTextAlternative',
 			'|',
-			'imageResize:50',
-			'imageResize:75',
-			'imageResize:original',
+			'resizeImage:50',
+			'resizeImage:75',
+			'resizeImage:original',
 			'|',
 			'linkImage',
 		]
