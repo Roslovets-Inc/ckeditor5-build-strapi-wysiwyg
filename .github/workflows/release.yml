@@ -1,4 +1,4 @@
-name: Publish and release
+name: 🚀 Publish and release
 
 on:
   push:
@@ -9,20 +9,20 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: 🔃 Checkout
         uses: actions/checkout@v2.3.1
         with:
           persist-credentials: false
 
-      - name: Install and build 🔧
+      - name: 🛠️ Install and build
         run: npm i
 
-      - name: Delete extra files ❌
+      - name: 🧹 Delete extra files
         run: |
           rm -rf node_modules src .github
           rm .gitignore package.json package-lock.json webpack.config.js
 
-      - name: Publish sample 📢
+      - name: 📢 Publish sample
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -33,12 +33,12 @@ jobs:
     needs: build-and-publish
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: 🔃 Checkout
         uses: actions/checkout@v2.3.1
         with:
           persist-credentials: false
 
-      - name: Create release 🛎️
+      - name: 🛎️ Create release
         id: create_release
         uses: actions/create-release@v1
         env:
