@@ -1,1 +1,0 @@
-Derived from https://github.com/leknoppix/ckeditor5-fullscreen
