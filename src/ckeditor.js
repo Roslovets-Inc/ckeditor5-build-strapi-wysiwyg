@@ -5,6 +5,8 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
@@ -50,6 +52,8 @@ ClassicEditor.builtinPlugins = [
 	Bold,
 	Italic,
 	Underline,
+	Subscript,
+	Superscript,
 	Code,
 	BlockQuote,
 	Heading,
@@ -99,6 +103,8 @@ ClassicEditor.defaultConfig = {
 			'bold',
 			'italic',
 			'underline',
+			'subscript',
+			'superscript',
 			'code',
 			'link',
 			'bulletedList',
