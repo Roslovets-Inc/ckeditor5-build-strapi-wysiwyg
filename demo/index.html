@@ -29,7 +29,7 @@
 				strapi-plugin-ckeditor5</b></p>
 
 		<figure class="image">
-			<img src="./tests/manual/sample.jpg" alt="Autumn fields" />
+			<img src="./sample.jpg" alt="Autumn fields" />
 			<figcaption>Sample image</figcaption>
 		</figure>
 
@@ -39,7 +39,10 @@
 
 	</div>
 
+	<!-- For web -->
 	<script src="./build/ckeditor.js"></script>
+	<!-- For local testing -->
+	<script src="../build/ckeditor.js"></script>
 	<script>
 		ClassicEditor.create(document.querySelector('#editor'))
 			.then(editor => {
