@@ -19,6 +19,7 @@ import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import ImageResizeEditing from '@ckeditor/ckeditor5-image/src/imageresize/imageresizeediting';
 import ImageResizeButtons from '@ckeditor/ckeditor5-image/src/imageresize/imageresizebuttons';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -66,6 +67,7 @@ ClassicEditor.builtinPlugins = [
 	ImageResizeEditing,
 	ImageResizeButtons,
 	Indent,
+	IndentBlock,
 	Link,
 	LinkImage,
 	List,
