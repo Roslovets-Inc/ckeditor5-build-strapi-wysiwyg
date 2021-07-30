@@ -44,6 +44,7 @@ import { StrapiUploadAdapter } from "@gtomato/ckeditor5-strapi-upload-plugin";
 import { StrapiMediaLib } from "./strapi-medialib-plugin";
 import sanitizeHtml from "sanitize-html";
 import FullScreen from "./fullscreen-plugin";
+import FontFamily from "@ckeditor/ckeditor5-font/src/fontfamily";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -88,6 +89,7 @@ ClassicEditor.builtinPlugins = [
     StrapiUploadAdapter,
     StrapiMediaLib,
     Font,
+    FontFamily,
     CodeBlock,
     FullScreen,
     TableProperties,
@@ -212,6 +214,21 @@ ClassicEditor.defaultConfig = {
     },
     htmlEmbed: {
         showPreviews: true,
+    },
+    fontFamily: {
+        options: [
+            "default",
+            "Arial, Helvetica, sans-serif",
+            "Courier New, Courier, monospace",
+            "Georgia, serif",
+            "Lucida Sans Unicode, Lucida Grande, sans-serif",
+            "Tahoma, Geneva, sans-serif",
+            "Times New Roman, Times, serif",
+            "Trebuchet MS, Helvetica, sans-serif",
+            "Verdana, Geneva, sans-serif",
+            "JetBrains Mono, monospace",
+            "Lato, Inter, sans-serif",
+        ],
     },
     sanitizeHtml: (inputHtml) => {
         const outputHtml = sanitizeHtml(inputHtml);
