@@ -1,51 +1,53 @@
 import ClassicEditorBase from "@ckeditor/ckeditor5-editor-classic/src/classiceditor";
-
 import Essentials from "@ckeditor/ckeditor5-essentials/src/essentials";
 import Autoformat from "@ckeditor/ckeditor5-autoformat/src/autoformat";
-import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold";
-import Italic from "@ckeditor/ckeditor5-basic-styles/src/italic";
-import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline";
-import Subscript from "@ckeditor/ckeditor5-basic-styles/src/subscript";
-import Superscript from "@ckeditor/ckeditor5-basic-styles/src/superscript";
+import {
+    Bold,
+    Italic,
+    Underline,
+    Subscript,
+    Superscript,
+    Code,
+} from "@ckeditor/ckeditor5-basic-styles/src/index";
 import RemoveFormat from "@ckeditor/ckeditor5-remove-format/src/removeformat";
-import Code from "@ckeditor/ckeditor5-basic-styles/src/code";
 import BlockQuote from "@ckeditor/ckeditor5-block-quote/src/blockquote";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading";
-import Image from "@ckeditor/ckeditor5-image/src/image";
-import ImageInsert from "@ckeditor/ckeditor5-image/src/imageinsert";
-import ImageCaption from "@ckeditor/ckeditor5-image/src/imagecaption";
-import ImageStyle from "@ckeditor/ckeditor5-image/src/imagestyle";
-import ImageToolbar from "@ckeditor/ckeditor5-image/src/imagetoolbar";
-import ImageResize from "@ckeditor/ckeditor5-image/src/imageresize";
-import ImageResizeEditing from "@ckeditor/ckeditor5-image/src/imageresize/imageresizeediting";
-import ImageResizeButtons from "@ckeditor/ckeditor5-image/src/imageresize/imageresizebuttons";
-import Indent from "@ckeditor/ckeditor5-indent/src/indent";
-import IndentBlock from "@ckeditor/ckeditor5-indent/src/indentblock";
-import Link from "@ckeditor/ckeditor5-link/src/link";
-import LinkImage from "@ckeditor/ckeditor5-link/src/linkimage";
-import List from "@ckeditor/ckeditor5-list/src/list";
-import ListStyle from "@ckeditor/ckeditor5-list/src/liststyle";
+import {
+    Image,
+    ImageInsert,
+    ImageCaption,
+    ImageStyle,
+    ImageToolbar,
+    ImageResize,
+    ImageResizeEditing,
+    ImageResizeButtons,
+} from "@ckeditor/ckeditor5-image/src/index";
+import { Indent, IndentBlock } from "@ckeditor/ckeditor5-indent/src/index";
+import { Link, LinkImage, AutoLink } from "@ckeditor/ckeditor5-link/src/index";
+import { List, ListStyle } from "@ckeditor/ckeditor5-list/src/index";
 import MediaEmbed from "@ckeditor/ckeditor5-media-embed/src/mediaembed";
 import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
 import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice";
-import Table from "@ckeditor/ckeditor5-table/src/table";
-import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
-import TableProperties from "@ckeditor/ckeditor5-table/src/tableproperties";
-import TableCellProperties from "@ckeditor/ckeditor5-table/src/tablecellproperties";
+import {
+    Table,
+    TableToolbar,
+    TableProperties,
+    TableCellProperties,
+} from "@ckeditor/ckeditor5-table/src/index";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation";
 import HorizontalLine from "@ckeditor/ckeditor5-horizontal-line/src/horizontalline";
 import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
-import AutoLink from "@ckeditor/ckeditor5-link/src/autolink";
-import SpecialCharacters from "@ckeditor/ckeditor5-special-characters/src/specialcharacters";
-import SpecialCharactersEssentials from "@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials";
+import {
+    SpecialCharacters,
+    SpecialCharactersEssentials,
+} from "@ckeditor/ckeditor5-special-characters/src/index";
 import HtmlEmbed from "@ckeditor/ckeditor5-html-embed/src/htmlembed";
-import Font from "@ckeditor/ckeditor5-font/src/font";
+import { Font, FontFamily } from "@ckeditor/ckeditor5-font/src/index";
 import CodeBlock from "@ckeditor/ckeditor5-code-block/src/codeblock";
 import { StrapiUploadAdapter } from "@gtomato/ckeditor5-strapi-upload-plugin";
 import { StrapiMediaLib } from "./strapi-medialib-plugin";
 import sanitizeHtml from "sanitize-html";
 import FullScreen from "./fullscreen-plugin";
-import FontFamily from "@ckeditor/ckeditor5-font/src/fontfamily";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
