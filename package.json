@@ -102,5 +102,8 @@
     "hooks": {
       "pre-commit": "npx lint-staged"
     }
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-remove-format": "^27.1.0"
   }
 }
