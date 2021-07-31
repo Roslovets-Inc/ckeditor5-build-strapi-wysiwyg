@@ -241,6 +241,27 @@ ClassicEditor.defaultConfig = {
             "Lato, Inter, sans-serif",
         ],
     },
+    link: {
+        defaultProtocol: "http://",
+        decorators: [
+            {
+                mode: "manual",
+                label: "Open in a new tab",
+                defaultValue: true,
+                attributes: {
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                },
+            },
+            {
+                mode: "manual",
+                label: "Downloadable",
+                attributes: {
+                    download: "download",
+                },
+            },
+        ],
+    },
     // This value must be kept in sync with the language defined in webpack.config.js.
     language: "en",
 };
