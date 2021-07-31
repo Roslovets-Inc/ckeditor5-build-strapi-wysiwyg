@@ -218,6 +218,13 @@ ClassicEditor.defaultConfig = {
     },
     htmlEmbed: {
         showPreviews: true,
+        sanitizeHtml: (inputHtml) => {
+            const outputHtml = sanitizeHtml(inputHtml);
+            return {
+                html: outputHtml,
+                hasChanged: true,
+            };
+        },
     },
     fontFamily: {
         options: [
@@ -233,13 +240,6 @@ ClassicEditor.defaultConfig = {
             "JetBrains Mono, monospace",
             "Lato, Inter, sans-serif",
         ],
-    },
-    sanitizeHtml: (inputHtml) => {
-        const outputHtml = sanitizeHtml(inputHtml);
-        return {
-            html: outputHtml,
-            hasChanged: true,
-        };
     },
     // This value must be kept in sync with the language defined in webpack.config.js.
     language: "en",
