@@ -5,6 +5,7 @@ import {
     Bold,
     Italic,
     Underline,
+    Strikethrough,
     Subscript,
     Superscript,
     Code,
@@ -24,7 +25,7 @@ import {
 } from "@ckeditor/ckeditor5-image/src/index";
 import { Indent, IndentBlock } from "@ckeditor/ckeditor5-indent/src/index";
 import { Link, LinkImage, AutoLink } from "@ckeditor/ckeditor5-link/src/index";
-import { List, ListStyle } from "@ckeditor/ckeditor5-list/src/index";
+import { List, ListStyle, TodoList } from "@ckeditor/ckeditor5-list/src/index";
 import MediaEmbed from "@ckeditor/ckeditor5-media-embed/src/mediaembed";
 import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
 import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice";
@@ -58,6 +59,7 @@ ClassicEditor.builtinPlugins = [
     Bold,
     Italic,
     Underline,
+    Strikethrough,
     Subscript,
     Superscript,
     RemoveFormat,
@@ -78,6 +80,7 @@ ClassicEditor.builtinPlugins = [
     LinkImage,
     List,
     ListStyle,
+    TodoList,
     MediaEmbed,
     Paragraph,
     PasteFromOffice,
@@ -113,6 +116,7 @@ ClassicEditor.defaultConfig = {
             "bold",
             "italic",
             "underline",
+            "strikethrough",
             "subscript",
             "superscript",
             "removeFormat",
@@ -120,6 +124,7 @@ ClassicEditor.defaultConfig = {
             "link",
             "bulletedList",
             "numberedList",
+            "todoList",
             "insertImage",
             "strapiMediaLib",
             "|",
