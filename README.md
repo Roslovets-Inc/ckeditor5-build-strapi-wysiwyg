@@ -33,7 +33,19 @@ cd ckeditor5-build-strapi-wysiwyg
 npm i
 ```
 
-3. Open **demo/index.html** in your system browser.
+3. Run the project on a server
+
+```
+python -m SimpleHTTPServer 8080
+```
+
+or
+
+```
+http-server -p 8080
+```
+
+4. Open **demo/index.html** in your system browser through http://localhost:8080/demo/.
 
 ## How to use
 

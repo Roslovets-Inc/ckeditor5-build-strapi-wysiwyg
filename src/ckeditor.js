@@ -27,6 +27,7 @@ import {
 import { Indent, IndentBlock } from "@ckeditor/ckeditor5-indent/src/index";
 import { Link, LinkImage, AutoLink } from "@ckeditor/ckeditor5-link/src/index";
 import { List, ListStyle, TodoList } from "@ckeditor/ckeditor5-list/src/index";
+import MathType from '@wiris/mathtype-ckeditor5/src/plugin';
 import MediaEmbed from "@ckeditor/ckeditor5-media-embed/src/mediaembed";
 import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
 import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice";
@@ -83,6 +84,7 @@ ClassicEditor.builtinPlugins = [
     List,
     ListStyle,
     TodoList,
+    MathType,
     MediaEmbed,
     Paragraph,
     PasteFromOffice,
@@ -138,6 +140,8 @@ ClassicEditor.defaultConfig = {
             "specialCharacters",
             "blockQuote",
             "insertTable",
+            "mathType",
+            "chemType",
             "mediaEmbed",
             "htmlEmbed",
             "codeBlock",
