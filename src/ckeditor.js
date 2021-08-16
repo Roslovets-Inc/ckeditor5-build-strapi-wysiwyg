@@ -13,6 +13,7 @@ import {
 import RemoveFormat from "@ckeditor/ckeditor5-remove-format/src/removeformat";
 import BlockQuote from "@ckeditor/ckeditor5-block-quote/src/blockquote";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading";
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import {
     Image,
     ImageInsert,
@@ -66,6 +67,7 @@ ClassicEditor.builtinPlugins = [
     Code,
     BlockQuote,
     Heading,
+    Highlight,
     Image,
     ImageInsert,
     ImageCaption,
@@ -112,6 +114,7 @@ ClassicEditor.defaultConfig = {
             "fontFamily",
             "fontSize",
             "fontColor",
+            "highLight",
             "|",
             "bold",
             "italic",
@@ -145,6 +148,52 @@ ClassicEditor.defaultConfig = {
             "redo",
         ],
         shouldNotGroupWhenFull: true,
+    },
+    highLight: {
+        options: [
+        		{
+          			model: 'yellowMarker',
+          			class: 'marker-yellow',
+          			title: 'Yellow marker',
+          			color: 'var(--ck-highlight-marker-yellow)',
+          			type: 'marker',
+        		},
+        		{
+          			model: 'greenMarker',
+          			class: 'marker-green',
+          			title: 'Green marker',
+          			color: 'var(--ck-highlight-marker-green)',
+          			type: 'marker',
+        		},
+        		{
+          			model: 'pinkMarker',
+          			class: 'marker-pink',
+          			title: 'Pink marker',
+          			color: 'var(--ck-highlight-marker-pink)',
+          			type: 'marker',
+        		},
+        		{
+          			model: 'blueMarker',
+          			class: 'marker-blue',
+          			title: 'Blue marker',
+          			color: 'var(--ck-highlight-marker-blue)',
+          			type: 'marker',
+        		},
+        		{
+          			model: 'redPen',
+          			class: 'pen-red',
+          			title: 'Red pen',
+          			color: 'var(--ck-highlight-pen-red)',
+          			type: 'pen',
+        		},
+        		{
+          			model: 'greenPen',
+          			class: 'pen-green',
+          			title: 'Green pen',
+          			color: 'var(--ck-highlight-pen-green)',
+          			type: 'pen',
+            },
+        ],
     },
     image: {
         styles: ["alignLeft", "alignCenter", "alignRight"],
