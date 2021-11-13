@@ -8,11 +8,11 @@ Enhanced build of [CKEditor 5](https://github.com/ckeditor/ckeditor5) to replace
 
 ## Features
 
-- Enhanced build of CKEditor 5 with more capabilities then Classic Editor build has
-- Extensive set of features for your rich content
-- Automatically upload Inserted images to Strapi Media Library (thanks to [ckeditor5-strapi-upload-plugin](https://github.com/gtomato/ckeditor5-strapi-upload-plugin))
-- Access Strapi Media Library directly from the editor toolbar 🔥
-- Full screen mode 🔥
+-   Enhanced build of CKEditor 5 with more capabilities then Classic Editor build has
+-   Extensive set of features for your rich content
+-   Automatically upload Inserted images to Strapi Media Library (thanks to [ckeditor5-strapi-upload-plugin](https://github.com/gtomato/ckeditor5-strapi-upload-plugin))
+-   Access Strapi Media Library directly from the editor toolbar 🔥
+-   Full screen mode 🔥
 
 ## How to try
 
@@ -33,7 +33,7 @@ cd ckeditor5-build-strapi-wysiwyg
 npm i
 ```
 
-3. Open **demo/index.html** in your system browser.
+3. Open **demo/index.html** in your system browser
 
 ## How to use
 
@@ -47,8 +47,8 @@ If you want to see more features in this build feel free to request it in [issue
 
 ## Links
 
-- [NPM package](https://www.npmjs.com/package/ckeditor5-build-strapi-wysiwyg)
-- [GitHub repository](https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg)
+-   [NPM package](https://www.npmjs.com/package/ckeditor5-build-strapi-wysiwyg)
+-   [GitHub repository](https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg)
 
 ## ⭐️ Show your support
 

@@ -16,6 +16,7 @@ import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtml
 
 import BlockQuote from "@ckeditor/ckeditor5-block-quote/src/blockquote";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading";
+import Highlight from "@ckeditor/ckeditor5-highlight/src/highlight";
 import {
     Image,
     ImageInsert,
@@ -71,6 +72,7 @@ ClassicEditor.builtinPlugins = [
     Code,
     BlockQuote,
     Heading,
+    Highlight,
     Image,
     ImageInsert,
     ImageCaption,
@@ -117,6 +119,7 @@ ClassicEditor.defaultConfig = {
             "fontFamily",
             "fontSize",
             "fontColor",
+            "highLight",
             "|",
             "bold",
             "italic",
