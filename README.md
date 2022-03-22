@@ -1,5 +1,7 @@
 # Enhanced build of CKEditor 5 for Strapi
 
+# ⚠️ DEPRECATED: This branch for Strapi v3 is outdated and not maintained. Please switch to the `main` branch and upgrade to Strapi v4 ⚠️
+
 Enhanced build of [CKEditor 5](https://github.com/ckeditor/ckeditor5) to replace default [Strapi](https://github.com/strapi/strapi) WYSIWYG editor.
 
 ![ckeditor5-build-strapi-wysiwyg demo screenshot](/demo/demo.png)
