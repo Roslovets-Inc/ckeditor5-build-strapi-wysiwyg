@@ -11,7 +11,7 @@ import {
     Code,
 } from "@ckeditor/ckeditor5-basic-styles/src/index";
 import RemoveFormat from "@ckeditor/ckeditor5-remove-format/src/removeformat";
-// import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
+import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
 
 import BlockQuote from "@ckeditor/ckeditor5-block-quote/src/blockquote";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading";
@@ -66,7 +66,7 @@ ClassicEditor.builtinPlugins = [
     Subscript,
     Superscript,
     RemoveFormat,
-    // SourceEditing,
+    SourceEditing,
     Code,
     BlockQuote,
     Heading,
@@ -126,7 +126,7 @@ ClassicEditor.defaultConfig = {
             "subscript",
             "superscript",
             "removeFormat",
-            // "sourceEditing",
+            "sourceEditing",
             "code",
             "link",
             "bulletedList",
