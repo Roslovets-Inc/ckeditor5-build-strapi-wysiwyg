@@ -2,6 +2,14 @@
   "name": "ckeditor5-build-strapi-wysiwyg",
   "version": "2.0.0-rc.1",
   "description": "CKEditor 5 build for Strapi WYSIWYG editor replacement",
+  "author": "Pavel Roslovets (https://github.com/roslovets)",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg",
+  "bugs": "https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg.git"
+  },
   "private": false,
   "keywords": [
     "ckeditor5-build",
@@ -26,83 +34,55 @@
   "files": [
     "build"
   ],
-  "devDependencies": {
-    "@ckeditor/ckeditor5-alignment": "^28.0.0",
-    "@ckeditor/ckeditor5-autoformat": "^28.0.0",
-    "@ckeditor/ckeditor5-basic-styles": "^28.0.0",
-    "@ckeditor/ckeditor5-block-quote": "^28.0.0",
-    "@ckeditor/ckeditor5-ckfinder": "^28.0.0",
-    "@ckeditor/ckeditor5-code-block": "^28.0.0",
-    "@ckeditor/ckeditor5-core": "^28.0.0",
-    "@ckeditor/ckeditor5-dev-utils": "^24.4.2",
-    "@ckeditor/ckeditor5-dev-webpack-plugin": "^24.4.2",
-    "@ckeditor/ckeditor5-easy-image": "^28.0.0",
-    "@ckeditor/ckeditor5-editor-classic": "^28.0.0",
-    "@ckeditor/ckeditor5-essentials": "^28.0.0",
-    "@ckeditor/ckeditor5-font": "^28.0.0",
-    "@ckeditor/ckeditor5-heading": "^28.0.0",
-    "@ckeditor/ckeditor5-highlight": "^28.0.0",
-    "@ckeditor/ckeditor5-horizontal-line": "^28.0.0",
-    "@ckeditor/ckeditor5-html-embed": "^28.0.0",
-    "@ckeditor/ckeditor5-image": "^28.0.0",
-    "@ckeditor/ckeditor5-indent": "^28.0.0",
-    "@ckeditor/ckeditor5-link": "^28.0.0",
-    "@ckeditor/ckeditor5-list": "^28.0.0",
-    "@ckeditor/ckeditor5-media-embed": "^28.0.0",
-    "@ckeditor/ckeditor5-paragraph": "^28.0.0",
-    "@ckeditor/ckeditor5-paste-from-office": "^28.0.0",
-    "@ckeditor/ckeditor5-remove-format": "^28.0.0",
-    "@ckeditor/ckeditor5-special-characters": "^28.0.0",
-    "@ckeditor/ckeditor5-table": "^28.0.0",
-    "@ckeditor/ckeditor5-theme-lark": "^28.0.0",
-    "@ckeditor/ckeditor5-typing": "^28.0.0",
-    "@gtomato/ckeditor5-strapi-upload-plugin": "^1.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-ckeditor5": "^3.1.1",
-    "postcss-loader": "^3.0.0",
-    "raw-loader": "^4.0.1",
-    "sanitize-html": "^2.6.0",
-    "style-loader": "^1.2.1",
-    "terser-webpack-plugin": "^3.0.2",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.11"
-  },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=5.7.1"
   },
-  "author": "Pavel Roslovets (https://github.com/roslovets)",
-  "license": "GPL-2.0-or-later",
-  "homepage": "https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg",
-  "bugs": "https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Roslovets-Inc/ckeditor5-build-strapi-wysiwyg.git"
-  },
   "scripts": {
-    "lint": "eslint --quiet \"**/*.js\"",
-    "bootstrap": "yarn install",
-    "build": "webpack --mode production",
+    "build": "webpack --mode development",
     "prepare": "npm run build",
     "preversion": "npm run build",
     "postversion": "git push && git push --tags"
   },
-  "lint-staged": {
-    "**/*.js": [
-      "eslint --quiet"
-    ],
-    "**/*.css": [
-      "stylelint --quiet --allow-empty-input"
-    ]
-  },
-  "eslintIgnore": [
-    "build/**",
-    "coverage/**",
-    "external/**"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx lint-staged"
-    }
+  "devDependencies": {
+    "@ckeditor/ckeditor5-alignment": "^33.0.0",
+    "@ckeditor/ckeditor5-autoformat": "^33.0.0",
+    "@ckeditor/ckeditor5-basic-styles": "^33.0.0",
+    "@ckeditor/ckeditor5-block-quote": "^33.0.0",
+    "@ckeditor/ckeditor5-ckfinder": "^33.0.0",
+    "@ckeditor/ckeditor5-code-block": "^33.0.0",
+    "@ckeditor/ckeditor5-core": "^33.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^29.0.2",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^29.0.2",
+    "@ckeditor/ckeditor5-easy-image": "^33.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^33.0.0",
+    "@ckeditor/ckeditor5-essentials": "^33.0.0",
+    "@ckeditor/ckeditor5-font": "^33.0.0",
+    "@ckeditor/ckeditor5-heading": "^33.0.0",
+    "@ckeditor/ckeditor5-highlight": "^33.0.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^33.0.0",
+    "@ckeditor/ckeditor5-html-embed": "^33.0.0",
+    "@ckeditor/ckeditor5-image": "^33.0.0",
+    "@ckeditor/ckeditor5-indent": "^33.0.0",
+    "@ckeditor/ckeditor5-link": "^33.0.0",
+    "@ckeditor/ckeditor5-list": "^33.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^33.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^33.0.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^33.0.0",
+    "@ckeditor/ckeditor5-remove-format": "^33.0.0",
+    "@ckeditor/ckeditor5-source-editing": "^33.0.0",
+    "@ckeditor/ckeditor5-special-characters": "^33.0.0",
+    "@ckeditor/ckeditor5-table": "^33.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^33.0.0",
+    "@ckeditor/ckeditor5-typing": "^33.0.0",
+    "@gtomato/ckeditor5-strapi-upload-plugin": "^1.0.0",
+    "css-loader": "^5.2.7",
+    "postcss-loader": "^4.3.0",
+    "raw-loader": "^4.0.2",
+    "sanitize-html": "^2.7.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
   }
 }

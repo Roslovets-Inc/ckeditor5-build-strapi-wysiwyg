@@ -11,7 +11,7 @@ import {
     Code,
 } from "@ckeditor/ckeditor5-basic-styles/src/index";
 import RemoveFormat from "@ckeditor/ckeditor5-remove-format/src/removeformat";
-// import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
+import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
 
 import BlockQuote from "@ckeditor/ckeditor5-block-quote/src/blockquote";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading";
@@ -28,7 +28,8 @@ import {
 } from "@ckeditor/ckeditor5-image/src/index";
 import { Indent, IndentBlock } from "@ckeditor/ckeditor5-indent/src/index";
 import { Link, LinkImage, AutoLink } from "@ckeditor/ckeditor5-link/src/index";
-import { List, ListStyle, TodoList } from "@ckeditor/ckeditor5-list/src/index";
+import TodoList from "@ckeditor/ckeditor5-list/src/todolist";
+import ListStyle from "@ckeditor/ckeditor5-list/src/liststyle";
 import MediaEmbed from "@ckeditor/ckeditor5-media-embed/src/mediaembed";
 import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
 import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice";
@@ -66,7 +67,7 @@ ClassicEditor.builtinPlugins = [
     Subscript,
     Superscript,
     RemoveFormat,
-    // SourceEditing,
+    SourceEditing,
     Code,
     BlockQuote,
     Heading,
@@ -83,7 +84,6 @@ ClassicEditor.builtinPlugins = [
     IndentBlock,
     Link,
     LinkImage,
-    List,
     ListStyle,
     TodoList,
     MediaEmbed,
@@ -126,7 +126,6 @@ ClassicEditor.defaultConfig = {
             "subscript",
             "superscript",
             "removeFormat",
-            // "sourceEditing",
             "code",
             "link",
             "bulletedList",
@@ -146,6 +145,8 @@ ClassicEditor.defaultConfig = {
             "htmlEmbed",
             "codeBlock",
             "horizontalLine",
+            "|",
+            "sourceEditing",
             "|",
             "fullScreen",
             "undo",
