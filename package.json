@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-strapi-wysiwyg",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "CKEditor 5 build for Strapi WYSIWYG editor replacement",
   "author": "Pavel Roslovets (https://github.com/roslovets)",
   "license": "GPL-2.0-or-later",
